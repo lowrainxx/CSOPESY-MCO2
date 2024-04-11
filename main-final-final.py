@@ -177,14 +177,17 @@ class Helldivers:
         print(f"Unsent Regular Citizens: {self.unsent_rc}\nUnsent Super Citizens: {self.unsent_sc}")
 
 if __name__ == "__main__":
-    # Ask for user input r, s
-    r = int(input("Input the total number of regular citizens: "))
-    s = int(input("Input the total number of super citizens: "))
+    # # Ask for user input r, s
+    # r = int(input("Input the total number of regular citizens: "))
+    # s = int(input("Input the total number of super citizens: "))
 
-    # Checks if r & s are not negative
-    if(r >= 0 and s >= 0):
-        print("\n")
-        hq = Helldivers(r, s)
-        hq.run()
+    # # Checks if r & s are not negative
+    # if(r >= 0 and s >= 0):
+    #     print("\n")
+    #     hq = Helldivers(r, s)
+    #     hq.run()
+
+    hq = Helldivers(15, 7)
+    hq.run()
 
     print("\n-----------------END-----------------\n")
