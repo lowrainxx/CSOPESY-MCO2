@@ -78,11 +78,9 @@ class Helldivers:
             ''' SATISFIES RULE #5 '''
             # Simulate who comes first
             if (random.uniform(0, 1) < 0.5):
-                print(f"SUPER FIRST")
                 self.sc_signup()
                 self.rc_signup()
             else:
-                print(f"REGULAR FIRST")
                 self.rc_signup()
                 self.sc_signup()
 
@@ -179,18 +177,14 @@ class Helldivers:
         print(f"Unsent Regular Citizens: {self.unsent_rc}\nUnsent Super Citizens: {self.unsent_sc}")
 
 if __name__ == "__main__":
-    #UNCOMMENT FOR SUBMISSION
-    # # Ask for user input r, s
-    # r = int(input("Input the total number of regular citizens: "))
-    # s = int(input("Input the total number of super citizens: "))
+    # Ask for user input r, s
+    r = int(input("Input the total number of regular citizens: "))
+    s = int(input("Input the total number of super citizens: "))
 
-    # # Checks if r & s are not negative
-    # if(r >= 0 and s >= 0):
-    #     print("\n")
-    #     hq = Helldivers(r, s)
-    #     hq.run()
-    
-    hq = Helldivers(9, 3) 
-    hq.run()
+    # Checks if r & s are not negative
+    if(r >= 0 and s >= 0):
+        print("\n")
+        hq = Helldivers(r, s)
+        hq.run()
 
     print("\n-----------------END-----------------\n")
